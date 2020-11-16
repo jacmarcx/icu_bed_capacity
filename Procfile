@@ -1,0 +1,1 @@
+worker: python icu_bed_scraper.py
