@@ -18,12 +18,10 @@ repo = g.get_repo('jacmarcx/icu_bed_capacity')
 t = datetime.now(pytz.timezone('America/Winnipeg')).strftime('%Y-%m-%d--%H')
 commit = 'hourly update: ' + str(t)
 
+log_time = datetime.now(pytz.timezone('America/Winnipeg')).strftime('%Y-%m-%d %H:%M:%S')
 
 try:
     url = 'https://whiteboard.manitoba-ehealth.ca/whiteboard/icu'
-
-    log_time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-
     r = requests.get(url)
     soup = BeautifulSoup(r.content, 'html.parser')
     # get headers
@@ -70,52 +68,3 @@ except:
     with open('logs.csv', 'r') as reader:
         data_logs = reader.read()    
         repo.create_file('logs/' + t + '.csv', commit,data_logs)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
