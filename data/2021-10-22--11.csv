@@ -1,0 +1,8 @@
+log_time,last date,last time,unit,total open staffed beds,ventilated patients,non-ventilated patients,total empty beds,off-unit patients in icu/accu (excl iccs),off-service patients (incl iccs),pending admissions,transferable patients,# of nurses (including charge)
+2021-10-22 11:11:03,2021-10-22,07:31,BRANDON,10,3,4,3,0,0,1,0,5
+2021-10-22 11:11:03,2021-10-22,07:36,GRACE,10,5,3,2,0,0,1,0,6
+2021-10-22 11:11:03,2021-10-22,07:49,HSC_IICU,8,7,1,0,0,0,0,1,4
+2021-10-22 11:11:03,2021-10-22,11:05,HSC_MICU,23,15,7,1,0,0,0,1,21
+2021-10-22 11:11:03,2021-10-22,08:34,HSC_SICU,14,8,4,2,0,0,0,0,14
+2021-10-22 11:11:03,2021-10-22,07:49,SBGH_ACCU,9,1,5,3,0,0,0,2,6
+2021-10-22 11:11:03,2021-10-22,11:05,SBGH_ICMS,14,11,3,0,0,2,0,0,14
